@@ -17,8 +17,17 @@ from database import Database
 
 logger = logging.getLogger(__name__)
 
-# Initialize database
-db = Database()
+# Initialize database instance - will be set in main app
+db = None
+
+def get_db():
+    """Get database instance"""
+    return db
+
+def set_db(database):
+    """Set database instance"""
+    global db
+    db = database
 
 # Create router
 router = APIRouter(prefix="/api")
