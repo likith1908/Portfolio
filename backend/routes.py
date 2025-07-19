@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import List, Optional
 import logging
 
-from .models import (
+from models import (
     PersonalInfo, PersonalInfoUpdate,
     EducationRecord, EducationRecordCreate, EducationRecordUpdate,
     ExperienceRecord, ExperienceRecordCreate, ExperienceRecordUpdate,
@@ -13,7 +13,7 @@ from .models import (
     PatentRecord, PatentRecordCreate, PatentRecordUpdate,
     ContactSubmissionCreate, ContactResponse, ApiResponse
 )
-from .database import Database
+from database import Database
 
 logger = logging.getLogger(__name__)
 
