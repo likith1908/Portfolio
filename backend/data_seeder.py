@@ -5,10 +5,14 @@ import asyncio
 import os
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
 
 # Add backend directory to path
 backend_dir = Path(__file__).parent
 sys.path.append(str(backend_dir))
+
+# Load environment variables
+load_dotenv(backend_dir / '.env')
 
 from database import Database
 import logging
