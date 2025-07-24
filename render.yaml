@@ -1,7 +1,7 @@
 services:
   # Backend API Service
   - type: web
-    name: fastapi-backend
+    name: likith-gannarapu-backend
     runtime: python
     plan: free
     buildCommand: cd backend && pip install -r requirements.txt
@@ -15,7 +15,7 @@ services:
 
   # Frontend Static Site
   - type: static
-    name: react-frontend
+    name: likith-gannarapu-app
     plan: free
     buildCommand: cd frontend && yarn install && yarn build
     staticPublishPath: ./frontend/build
