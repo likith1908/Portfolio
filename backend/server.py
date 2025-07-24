@@ -14,10 +14,12 @@ from datetime import datetime
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection
-mongo_url = os.environ['MONGO_URL']
+# MongoDB connection - support both local and Atlas
+mongo_url = os.environ.get('MONGODB_URI') or os.environ.get('MONGO_URL')
+db_name = os.environ.get('DB_NAME', 'fastapi_db')
+
 client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+db = client[db_name]
 
 # Create the main app without a prefix
 app = FastAPI()
