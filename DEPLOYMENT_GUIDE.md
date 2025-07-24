@@ -90,7 +90,7 @@ mongodb+srv://fastapi_user:yourpassword123@cluster0.xxxxx.mongodb.net/fastapi_db
 1. Click **"New+"** → **"Static Site"**
 2. Connect the same GitHub repository
 3. Configure:
-   - **Name**: `likith-gannarapu-app`
+   - **Name**: `likith-gannarapu`
    - **Branch**: `main`
    - **Root Directory**: `frontend`
    - **Build Command**: `yarn install && yarn build`
@@ -122,7 +122,7 @@ mongodb+srv://fastapi_user:yourpassword123@cluster0.xxxxx.mongodb.net/fastapi_db
    ```
 
 ### 3.2 Test Frontend
-1. Visit your frontend URL: `https://likith-gannarapu-app.onrender.com`
+1. Visit your frontend URL: `https://likith-gannarapu.onrender.com`
 2. You should see the Emergent logo and "Building something incredible ~!"
 3. Check browser console - it should successfully call the backend API
 
@@ -178,7 +178,7 @@ REACT_APP_BACKEND_URL=https://likith-gannarapu-backend.onrender.com
 
 ## 🎉 Your app is now live and FREE!
 
-- **Frontend**: `https://likith-gannarapu-app.onrender.com`
+- **Frontend**: `https://likith-gannarapu.onrender.com`
 - **Backend API**: `https://likith-gannarapu-backend.onrender.com/api/`
 - **Database**: MongoDB Atlas (Free M0 cluster)
 

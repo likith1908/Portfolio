@@ -15,7 +15,7 @@ services:
 
   # Frontend Static Site
   - type: static
-    name: likith-gannarapu-app
+    name: likith-gannarapu
     plan: free
     buildCommand: cd frontend && yarn install && yarn build
     staticPublishPath: ./frontend/build
