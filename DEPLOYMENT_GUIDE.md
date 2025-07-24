@@ -138,7 +138,7 @@ DB_NAME=fastapi_db
 
 ### Frontend Environment Variables (Render.com)
 ```
-REACT_APP_BACKEND_URL=https://your-app-backend.onrender.com
+REACT_APP_BACKEND_URL=https://likith-gannarapu-backend.onrender.com
 ```
 
 ---
