@@ -60,10 +60,20 @@ app.include_router(api_router)
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=["*"],
+    allow_origins=["*"],  # In production, specify your frontend domain
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Add a health check endpoint
+@api_router.get("/health")
+async def health_check():
+    try:
+        # Test database connection
+        await db.status_checks.count_documents({})
+        return {"status": "healthy", "database": "connected"}
+    except Exception as e:
+        return {"status": "unhealthy", "database": "disconnected", "error": str(e)}
 
 # Configure logging
 logging.basicConfig(
