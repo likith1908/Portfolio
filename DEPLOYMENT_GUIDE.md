@@ -178,8 +178,8 @@ REACT_APP_BACKEND_URL=https://likith-gannarapu-backend.onrender.com
 
 ## 🎉 Your app is now live and FREE!
 
-- **Frontend**: `https://your-app-frontend.onrender.com`
-- **Backend API**: `https://your-app-backend.onrender.com/api/`
+- **Frontend**: `https://likith-gannarapu-app.onrender.com`
+- **Backend API**: `https://likith-gannarapu-backend.onrender.com/api/`
 - **Database**: MongoDB Atlas (Free M0 cluster)
 
 Total monthly cost: **$0** 🎉
