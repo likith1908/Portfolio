@@ -70,7 +70,7 @@ mongodb+srv://fastapi_user:yourpassword123@cluster0.xxxxx.mongodb.net/fastapi_db
 2. Click **"New+"** → **"Web Service"**
 3. Connect your GitHub repository
 4. Configure the service:
-   - **Name**: `your-app-backend`
+   - **Name**: `likith-gannarapu-backend`
    - **Region**: Choose closest to you
    - **Branch**: `main`
    - **Root Directory**: Leave empty
@@ -84,13 +84,13 @@ mongodb+srv://fastapi_user:yourpassword123@cluster0.xxxxx.mongodb.net/fastapi_db
 
 6. Click **"Create Web Service"**
 7. Wait for deployment (5-10 minutes)
-8. **Save the backend URL** (e.g., `https://your-app-backend.onrender.com`)
+8. **Save the backend URL** (e.g., `https://likith-gannarapu-backend.onrender.com`)
 
 ### 2.3 Deploy Frontend (React)
 1. Click **"New+"** → **"Static Site"**
 2. Connect the same GitHub repository
 3. Configure:
-   - **Name**: `your-app-frontend`
+   - **Name**: `likith-gannarapu-app`
    - **Branch**: `main`
    - **Root Directory**: `frontend`
    - **Build Command**: `yarn install && yarn build`
