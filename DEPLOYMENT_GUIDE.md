@@ -111,18 +111,18 @@ mongodb+srv://fastapi_user:yourpassword123@cluster0.xxxxx.mongodb.net/fastapi_db
 ## Step 3: Test Your Deployment
 
 ### 3.1 Test Backend
-1. Visit your backend URL: `https://your-app-backend.onrender.com/api/`
+1. Visit your backend URL: `https://likith-gannarapu-backend.onrender.com/api/`
 2. You should see: `{"message": "Hello World"}`
 
 3. Test the status endpoint:
    ```bash
-   curl -X POST https://your-app-backend.onrender.com/api/status \
+   curl -X POST https://likith-gannarapu-backend.onrender.com/api/status \
    -H "Content-Type: application/json" \
    -d '{"client_name": "test_client"}'
    ```
 
 ### 3.2 Test Frontend
-1. Visit your frontend URL: `https://your-app-frontend.onrender.com`
+1. Visit your frontend URL: `https://likith-gannarapu-app.onrender.com`
 2. You should see the Emergent logo and "Building something incredible ~!"
 3. Check browser console - it should successfully call the backend API
 
